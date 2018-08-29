@@ -331,4 +331,9 @@ protocol Common {
     int x1;
     int y1;
   }
+
+  record HPrevInfo {
+      Seqno seqno;
+      LinkID hash;
+  }
 }
