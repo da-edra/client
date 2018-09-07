@@ -10,7 +10,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   // both with a preference for https
   onCancel: () => dispatch(ProfileGen.createCancelAddProof()),
   onOptionClick: choice =>
-    dispatch(ProfileGen.createAddProof({platform: choice === 'file' ? 'https' : 'dns'})),
+    dispatch(ProfileGen.createAddProof({platform: choice === 'file' ? 'web' : 'dns'})),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps, (s, d, o) => ({...o, ...s, ...d}))(
