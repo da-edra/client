@@ -39,4 +39,8 @@ export const platformText: {
     headerText: 'Prove your website',
     hintText: 'whatever.yoursite.com',
   },
+  web: {
+    headerText: 'Prove your website',
+    hintText: 'whatever.yoursite.com',
+  },
 }

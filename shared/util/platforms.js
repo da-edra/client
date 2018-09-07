@@ -33,6 +33,7 @@ export function subtitle(platform: PlatformsExpandedType): ?string {
     case 'dns':
     case 'http':
     case 'https':
+    case 'web':
       return platform
     default:
       return `@${platform}`
