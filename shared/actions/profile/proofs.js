@@ -35,7 +35,7 @@ function* _checkProof(action: ProfileGen.CheckProofPayload): Saga.SagaGenerator<
     if (!found && status >= RPCTypes.proveCommonProofStatus.baseHardError) {
       yield Saga.put(
         ProfileGen.createUpdateErrorText({
-          errorText: "We couldn't find your proof. Please retry!",
+          errorText: 'We couldn\'t find your proof. Please retry!',
         })
       )
     } else {
@@ -73,7 +73,7 @@ function _addProof(action: ProfileGen.AddProofPayload) {
       break
     // flow needs this for some reason
     case 'web':
-      actions.push(Saga.call(_addServiceProof, "web"))
+      actions.push(Saga.call(_addServiceProof, 'web'))
       break
     case 'http':
     case 'https':
